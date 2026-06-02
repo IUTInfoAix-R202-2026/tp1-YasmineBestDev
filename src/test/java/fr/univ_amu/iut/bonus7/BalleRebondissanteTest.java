@@ -8,7 +8,6 @@ import javafx.scene.control.Slider;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.api.FxRobot;
@@ -31,7 +30,6 @@ class BalleRebondissanteTest {
 
   // --- Étape 1 : afficher la fenêtre ---
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   void laFenetreEstVisible(FxRobot robot) {
     assertThat(stage.isShowing()).as("le Stage doit être affiché").isTrue();
@@ -39,7 +37,6 @@ class BalleRebondissanteTest {
 
   // --- Étape 2 : la scène existe ---
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   void laSceneExiste(FxRobot robot) {
     assertThat(stage.getScene()).as("le Stage doit avoir une Scene").isNotNull();
@@ -47,7 +44,6 @@ class BalleRebondissanteTest {
 
   // --- Étape 3 : le bouton Démarrer ---
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   void leBoutonDemarrerExiste(FxRobot robot) {
     Button btn = robot.lookup("#btn-start").queryAs(Button.class);
@@ -56,7 +52,6 @@ class BalleRebondissanteTest {
 
   // --- Étape 4 : le bouton Pause ---
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   void leBoutonPauseExiste(FxRobot robot) {
     Button btn = robot.lookup("#btn-pause").queryAs(Button.class);
@@ -65,7 +60,6 @@ class BalleRebondissanteTest {
 
   // --- Étape 5 : le bouton Reprendre ---
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   void leBoutonReprendreExiste(FxRobot robot) {
     Button btn = robot.lookup("#btn-resume").queryAs(Button.class);
@@ -74,7 +68,6 @@ class BalleRebondissanteTest {
 
   // --- Étape 6 : le bouton Stop ---
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   void leBoutonStopExiste(FxRobot robot) {
     Button btn = robot.lookup("#btn-stop").queryAs(Button.class);
@@ -83,7 +76,6 @@ class BalleRebondissanteTest {
 
   // --- Étape 7 : le slider de vitesse ---
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   void leSliderExiste(FxRobot robot) {
     Slider slider = robot.lookup("#slider-vitesse").queryAs(Slider.class);
@@ -92,7 +84,6 @@ class BalleRebondissanteTest {
 
   // --- Étape 8 : le slider a les bonnes limites ---
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   void leSliderALesBonnesLimites(FxRobot robot) {
     Slider slider = robot.lookup("#slider-vitesse").queryAs(Slider.class);
@@ -102,7 +93,6 @@ class BalleRebondissanteTest {
 
   // --- Étape 9 : la balle ---
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   void laBalleExiste(FxRobot robot) {
     Circle balle = robot.lookup("#balle").queryAs(Circle.class);
@@ -112,7 +102,6 @@ class BalleRebondissanteTest {
 
   // --- Étape 10 : la zone d'animation ---
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   void laZoneAnimationExiste(FxRobot robot) {
     Pane zone = robot.lookup("#zone-animation").queryAs(Pane.class);
@@ -121,7 +110,6 @@ class BalleRebondissanteTest {
 
   // --- Étape 11 : démarrer lance l'animation ---
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   void demarrerLanceAnimation(FxRobot robot) {
     Circle balle = robot.lookup("#balle").queryAs(Circle.class);
@@ -136,7 +124,6 @@ class BalleRebondissanteTest {
 
   // --- Étape 12 : pause arrête le mouvement ---
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   void pauseArreteLAnimation(FxRobot robot) {
     Button btnStart = robot.lookup("#btn-start").queryAs(Button.class);
@@ -155,7 +142,6 @@ class BalleRebondissanteTest {
 
   // --- Étape 13 : reprendre relance l'animation ---
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   void reprendreContinueLAnimation(FxRobot robot) {
     Button btnStart = robot.lookup("#btn-start").queryAs(Button.class);
@@ -177,7 +163,6 @@ class BalleRebondissanteTest {
 
   // --- Étape 14 : stop réinitialise l'animation ---
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   void stopArreteLAnimation(FxRobot robot) {
     Button btnStart = robot.lookup("#btn-start").queryAs(Button.class);
