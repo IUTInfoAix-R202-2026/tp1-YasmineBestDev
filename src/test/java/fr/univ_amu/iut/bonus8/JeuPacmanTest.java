@@ -26,7 +26,6 @@ class JeuPacmanTest {
 
   // --- Étape 1 : afficher la fenêtre ---
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   void laFenetreEstVisible(FxRobot robot) {
     assertThat(stage.isShowing()).as("le Stage doit être affiché").isTrue();
@@ -34,7 +33,6 @@ class JeuPacmanTest {
 
   // --- Étape 2 : le plateau de jeu ---
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   void lePlateauExiste(FxRobot robot) {
     Pane plateau = robot.lookup("#plateau").queryAs(Pane.class);
@@ -43,7 +41,6 @@ class JeuPacmanTest {
 
   // --- Étape 3 : les deux personnages ---
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   void lePacmanExiste(FxRobot robot) {
     Pacman pacman = robot.lookup("#pacman").queryAs(Pacman.class);
